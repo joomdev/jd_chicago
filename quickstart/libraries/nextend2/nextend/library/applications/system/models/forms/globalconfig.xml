@@ -1,0 +1,13 @@
+<root>
+  <params name="options" label="Options">
+    <param type="onoff" name="protocol-relative" label="Use protocol-relative URL" default="1"/>
+  </params>
+  <params name="javascript" label="JavaScript">
+    <param type="token"/>
+    <param type="onoff" name="jquery" label="Load jQuery on frontend" default="1"/>
+    <param type="onoff" name="gsap" label="Load GSAP on frontend" default="1"/>
+    <param type="onoff" name="async" label="Async" default="0"/>
+    <param type="onoff" name="combine-js" label="Combine" default="0"/>
+    <param type="onoff" name="minify-js" label="Minify" default="0"/>
+  </params>
+</root> 

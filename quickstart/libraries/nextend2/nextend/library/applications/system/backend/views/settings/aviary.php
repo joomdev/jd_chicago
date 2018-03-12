@@ -1,0 +1,64 @@
+<?php
+/**
+* @author    Roland Soos
+* @copyright (C) 2015 Nextendweb.com
+* @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+**/
+defined('_JEXEC') or die('Restricted access');
+?><?php
+/**
+ * @var $_class N2SystemBackendSettingsView
+ * @see Actions
+ */
+$this->widget->init('topbar', array(
+    "actions" => array(
+        NHtml::tag('a', array(
+            'href'    => '#',
+            'class'   => 'n2-button n2-button-green n2-button-big n2-h4 n2-b n2-uc',
+            'onclick' => 'return NextendForm.submit("#nextend-config");'
+        ), n2_('Save'))
+    )
+));
+
+?>
+    <div class="n2-heading-bar">
+        <div class="n2-h1 n2-heading"><?php n2_e('Adobe Creative SDK - Aviary image editor'); ?></div>
+    </div>
+
+    <div class="n2-form-tab ">
+        <div class="n2-h2 n2-content-box-title-bg"><?php n2_e('Get Adobe Creative SDK API access'); ?></div>
+
+        <div class="n2-description">
+            <p><?php n2_e('To be able to use Aviary image editing tool in this application, you have to create an own API key to gain access.'); ?></p>
+            <ol>
+                <li><?php n2_e('If you have already registered to Adobe, you can skip this step. If not, please <a href="https://creativesdk.adobe.com/myapps.html" target="_blank">register</a>!'); ?>
+                </li>
+                <li><?php n2_e('After you have logged in <a href="https://creativesdk.adobe.com/myapps.html" target="_blank">on this page</a>, click on the "NEW APPLICATION" button!'); ?>
+                </li>
+                <li><?php n2_e('Application Name can be anything'); ?></li>
+                <li><?php n2_e('Platform must be "Web"'); ?></li>
+                <li><?php n2_e('Write a short description about your site'); ?></li>
+                <li><?php n2_e('Fill the captcha'); ?></li>
+                <li><?php n2_e('Click the "ADD APPLICATION" button'); ?></li>
+                <li><?php n2_e('Then you can copy and paste your Client ID and Client secret to this form and Save it'); ?></li>
+            </ol>
+        </div>
+    </div>
+<?php
+$values = N2ImageAviary::loadSettings();
+if ($values['public'] && $values['secret']):
+    ?>
+    <div class="n2-form-tab ">
+        <div class="n2-h2 n2-content-box-title-bg"><?php n2_e('High resolution feature'); ?></div>
+
+        <div class="n2-description">
+            <p><?php n2_e('By default Aviary is limited in the image size up to 1 megapixel. If you would like to edit bigger images, you can ask them (it\'s free) to enable high resolution image support on your app. '); ?></p>
+            <a class="n2-button n2-button-big n2-button-green"
+               href="mailto:websupport@creativesdk.zendesk.com?Subject=Web%20High%20Resolution%20Upgrade%20Inquiry&Body=Hello%2C%0AI%20would%20like%20to%20ask%20you%20to%20enable%20high%20resolution%20image%20support%20on%20my%20app.%0AMy%20Client%20id%20is%3A%20<?php echo $values['public']; ?>%0A%0AName%20of%20your%20company%3A%20%0ANumber%20of%20monthly%20active%20web%20users%3A%2010">
+                <?php n2_e('Request access to high resolution API'); ?>
+            </a>
+        </div>
+    </div>
+<?php
+endif;
+$_class->renderAviaryConfigurationForm();

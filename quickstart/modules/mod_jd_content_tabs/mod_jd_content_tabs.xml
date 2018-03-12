@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>JD Content Tab Slider</name>
+	<author>JoomDev</author>
+	<creationDate>June 2016</creationDate>
+	<copyright>Copyright (C) 2010 - 2012 joomdev.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@joomdev.com</authorEmail>
+	<authorUrl>www.joomdev.com</authorUrl>
+	<version>1.0</version>
+	<description>JD Content Tabs Slider</description>
+	<files>
+		<filename module="mod_jd_content_tabs">mod_jd_content_tabs.php</filename>
+		<folder>tmpl</folder>
+		<folder>fields</folder>
+		<folder>sql</folder>
+		<folder>css</folder>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jd_content_tabs.ini</language>
+		<language tag="en-GB">en-GB.mod_jd_content_tabs.sys.ini</language>
+	</languages>
+	<install>
+     <sql>
+         <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+	 </sql>
+	</install>
+	 
+	<uninstall>
+		 <sql>
+		 <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		 </sql>
+	</uninstall>
+	<config>
+		<fields name="params">
+		
+			<fieldset name="basic" addfieldpath="modules/mod_jd_content_tabs/fields">
+				<field name="tab_position" type="list" required="1" label="MOD_JD_CONTENT_TAB_POSITION_LABEL" description = "MOD_JD_CONTENT_TAB_POSITION_DESC">
+					<option value="right">Right</option>
+					<option value="left">Left</option>
+			
+					
+					</field>
+<!-- 			<field name="thumb" type="media" label="Select Thumbnail" />
+				<field name="thumbnaillink" type="text" label="Thumbnail Link" description="(in http://www.enservio.com/ format)"/>
+				<field name="thumbnailwidth" type="text" label="Thumbnail width" description="for example: 50% or 250px" /> -->
+				<field
+					name="autoplay"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					
+					label="MOD_JD_CONTENT_TAB_AUTOPLAY_LABEL"
+					description="MOD_JD_CONTENT_TAB_AUTOPLAY_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="autoplaytime" default="5000" type="number" label="MOD_JD_CONTENT_TAB_AUTOPLAY_TIME_LABEL" description = "MOD_JD_CONTENT_TAB_AUTOPLAY_TIME_DESC" />
+				<field name="description" type="editor" label="MOD_JD_CONTENT_TAB_DESCRIPTION_LABEL" description="MOD_JD_CONTENT_TAB_DESCRIPTION_DESC" filter="safehtml" />
+				
+				<field name="customitem" type="customitem" />
+			</fieldset>
+			<fieldset name="advanced">
+				
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+				/>
+
+				
+			</fieldset>
+			
+		</fields>
+	</config>	
+</extension>

@@ -1,0 +1,28 @@
+<?php
+/**
+* @author    Roland Soos
+* @copyright (C) 2015 Nextendweb.com
+* @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+**/
+defined('_JEXEC') or die('Restricted access');
+?><div></div>
+<div class="n2-form">
+    <div class="n2-form-tab " id="n2-tab-general"><div class="n2-h2 n2-content-box-title-bg">Help</div>
+        <table>
+            <colgroup>
+                <col class="n2-label-col">
+                <col class="n2-element-col">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td class="n2-label"><label>Nextend Framework version</label></td>
+                <td class="n2-element"><div class="n2-element-plain"><?php echo N2::$version; ?></div></td>
+            </tr>
+            <tr>
+                <td class="n2-label"><label>Platform</label></td>
+                <td class="n2-element"><div class="n2-element-plain"><?php echo N2Platform::getPlatformName(); ?></div></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

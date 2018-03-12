@@ -1,0 +1,6 @@
+<root>
+  <params name="shadow" label="Shadow settings" hidetitle="1">
+    <param name="widget-shadow-position" type="widgetposition" label="Position" class="n2-hidden"/>
+    <param type="imagelistfromfolder" name="widget-shadow-shadow" label="Shadow" folder="shadow" required="1"/>
+  </params>
+</root>

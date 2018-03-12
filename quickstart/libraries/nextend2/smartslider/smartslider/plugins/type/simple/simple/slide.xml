@@ -1,0 +1,15 @@
+<root>
+  <params name="simpleslidertypeanimation" label="Animation settings">
+    <param type="group" label="Background animation">
+      <param type="backgroundanimation" name="background-animation" label="Animation(s)" default=""/>
+      <param type="list" name="background-animation-speed" label="Speed" default="default" translateable="1">
+        <option value="default">Default</option>
+        <option value="superSlow">Super slow</option>
+        <option value="slow">Slow</option>
+        <option value="normal">Normal</option>
+        <option value="fast">Fast</option>
+        <option value="superFast">Super fast</option>
+      </param>
+    </param>
+  </params>
+</root>

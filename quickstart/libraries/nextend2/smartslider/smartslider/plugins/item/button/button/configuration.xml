@@ -1,0 +1,21 @@
+<root>
+  <params name="button-item" label="Button item settings" hidetitle="1">
+    <param name="content" type="text" label="Text" default="Button"/>
+    <param name="font" type="font" previewmode="link" set="1100" style="item_buttonstyle" label="Font" css="width: 140px;">
+      <![CDATA[ <div class="{fontClassName}" style="width:{nextend.activeLayer.prop('style').width};"><a style="display:{$('#item_buttonfullwidth').val() == 1 ? 'block' : 'inline-block'};" href="#" class="{styleClassName}" onclick="return false;">{$('#item_buttoncontent').val();}</a></div> ]]>
+    </param>
+    <param name="style" type="style" previewmode="button" set="1100" font="item_buttonfont" label="Style" css="width: 140px;">
+      <![CDATA[ <div class="{fontClassName}" style="width:{nextend.activeLayer.prop('style').width};"><a style="display:{$('#item_buttonfullwidth').val() == 1 ? 'block' : 'inline-block'};" href="#" class="{styleClassName}" onclick="return false;">{$('#item_buttoncontent').val();}</a></div> ]]>
+    </param>
+    <param name="link" type="mixed" label="Link" default="#|*|_self">
+      <param type="url" label="Link" style="width:140px;"/>
+      <param type="list" label="Target" translateable="1">
+        <option value="_self">Self</option>
+        <option value="_blank">Blank</option>
+      </param>
+    </param>
+    <param type="group" label="Sizing">
+      <param name="fullwidth" type="onoff" label="Full width" default="1"/>
+      <param name="nowrap" type="onoff" label="No wrap" default="1"/></param>
+  </params>
+</root>

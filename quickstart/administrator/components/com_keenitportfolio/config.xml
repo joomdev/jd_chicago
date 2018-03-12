@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset label="COM_KEENITPORTFOLIO" name="keenitportfolio">
+            
+			  <field
+					name="title"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_TITLE"
+					description="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_TITLE_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+						<field
+					name="lightbox_icon"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_ZOOM_ICON"
+					description="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_ZOOM_ICON_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field
+					name="details_icon"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_DETAILS_ICON"
+					description="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_DETAILS_ICON_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+        
+    </fieldset>
+	 <fieldset label="COM_KEENITPORTFOLIO_DETAILS" name="keenitportfolio_details">
+				
+				<field
+					name="detail_title"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_TITLE"
+					description="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_TITLE_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field
+					name="can_title"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_PROJECT_CAT"
+					description="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_PROJECT_CAT_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field
+					name="client_name"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_CLIENT_NAME"
+					description="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_CLIENT_NAME_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field
+					name="project_date"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_PROJECT_DATE"
+					description="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_PROJECT_DATE_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field
+					name="project_url"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_PROJECT_LINK"
+					description="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_PROJECT_LINK_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field
+					name="project_details"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_PROJECT_DETAILS"
+					description="COM_KEENITPORTFOLIO_FORM_PARAMS_DISPLAY_PROJECT_DETAILS_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+
+        
+    </fieldset>
+    <fieldset 
+        name="permissions"
+	description="JCONFIG_PERMISSIONS_DESC"
+	label="JCONFIG_PERMISSIONS_LABEL">
+
+		<field 
+                    name="rules" type="rules" component="com_keenitportfolio"
+                    class="inputbox" filter="rules" validate="rules"
+                    label="JCONFIG_PERMISSIONS_LABEL"
+                    section="component" />
+	</fieldset>
+</config>

@@ -1,0 +1,76 @@
+@import 'elements.less';
+@import 'slide.less';
+@import 'clear.less';
+@import 'backgroundanimation.less';
+
+(~'div@{id}') {
+  width: @width;
+  height: @height;
+  float: left;
+
+  html[dir="rtl"] & {
+    float: right;
+  }
+
+  .n2-ss-slider-1 {
+    position: relative;
+    padding-top: @paddingt;
+    padding-right: @paddingr;
+    padding-bottom: @paddingb;
+    padding-left: @paddingl;
+    height: @inner1height;
+    border-style: solid;
+    border-width: @border;
+    border-color: @borderhex;
+    border-color: @borderrgba;
+    .border-radius(@borderRadius, @borderRadius, @borderRadius, @borderRadius);
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    background-size: @backgroundSize;
+    background-attachment: @backgroundAttachment;
+  }
+
+  .n2-ss-slider-background-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .n2-ss-slider-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .n2-ss-slider-3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .x-firefox & .n2-ss-slider-2 {
+    opacity: 0.99999;
+  }
+
+  .n2-ss-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: @canvaswidth;
+    height: @canvasheight;
+    z-index: 2;
+    display: block;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .n2-ss-layers-container {
+    position: relative;
+    width: @canvaswidth;
+    height: @canvasheight;
+  }
+
+  .n2-ss-slide-active {
+    z-index: 3;
+  }
+}

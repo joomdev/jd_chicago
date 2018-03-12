@@ -1,0 +1,5 @@
+<root>
+    <params name="extracss" label="Extra CSS" type="raw">
+        <param name="extracss" label="" style="width: auto; margin: 20px;" type="textarea" />
+    </params>
+</root>

@@ -1,0 +1,37 @@
+<root>
+    <params name="desktop" label="Desktop">
+        <param name="desktop-preview" label="Preview" type="container"/>
+        <param name="desktop-size" label="Size" type="mixed" default="0|*|0" class="n2-expert">
+            <param label="Width" type="number" style="width: 40px;">
+                <unit>px</unit>
+            </param>
+            <param label="Width" type="number" style="width: 40px;">
+                <unit>px</unit>
+            </param>
+        </param>
+    </params>
+    <params name="tablet" label="Tablet">
+        <param name="tablet-image" label="Image" type="image" default=""/>
+        <param name="tablet-preview" label="Preview" type="container"/>
+        <param name="tablet-size" label="Size" type="mixed" default="0|*|0" class="n2-expert">
+            <param label="Width" type="number" style="width: 40px;">
+                <unit>px</unit>
+            </param>
+            <param label="Width" type="number" style="width: 40px;">
+                <unit>px</unit>
+            </param>
+        </param>
+    </params>
+    <params name="mobile" label="Mobile">
+        <param name="mobile-image" label="Image" type="image" default=""/>
+        <param name="mobile-preview" label="Preview" type="container"/>
+        <param name="mobile-size" label="Size" type="mixed" default="0|*|0" class="n2-expert">
+            <param label="Width" type="number" style="width: 40px;">
+                <unit>px</unit>
+            </param>
+            <param label="Width" type="number" style="width: 40px;">
+                <unit>px</unit>
+            </param>
+        </param>
+    </params>
+</root>

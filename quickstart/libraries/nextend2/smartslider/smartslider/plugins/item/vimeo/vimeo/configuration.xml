@@ -1,0 +1,21 @@
+<root>
+  <params name="vimeo-item" label="Vimeo item settings" hidetitle="1">
+    <param name="vimeourl" type="text" label="Vimeo url"/>
+    <param name="image" type="image" label="Cover image" fixed="1" style="width: 144px;"/>
+    <param name="volume" type="list" label="Volume" default="-1" translateable="1">
+      <option value="0">Mute</option>
+      <option value="0.25">25%</option>
+      <option value="0.5">50%</option>
+      <option value="0.75">75%</option>
+      <option value="1">100%</option>
+      <option value="-1">Default</option>
+    </param>
+    <param name="autoplay" type="onoff" label="Autoplay" default="0"/>
+    <param name="center" type="onoff" label="Centered" default="0" class="n2-hidden"/>
+    <param name="reset" type="onoff" label="Reset video when lose focus" default="0"/>
+    <param name="title" type="onoff" label="Title" default="1"/>
+    <param name="byline" type="onoff" label="Users byline" default="1"/>
+    <param name="portrait" type="onoff" label="Portrait" default="1"/>
+    <param name="color" type="color" label="Color" default="00adef"/>
+  </params>
+</root>

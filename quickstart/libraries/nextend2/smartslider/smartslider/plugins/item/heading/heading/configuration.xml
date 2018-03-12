@@ -1,0 +1,21 @@
+<root>
+  <params name="heading-item" label="Heading item settings" hidetitle="1">
+    <param name="heading" type="textarea" label="Text" default="Heading" style2="width: 230px;resize: vertical;"/>
+    <param name="font" type="font" previewmode="hover" set="1000" style="item_headingstyle" label="Font" css="width: 140px;">
+      <![CDATA[ <div style="width:{nextend.activeLayer.prop('style').width};"><div class="{styleClassName} {fontClassName}">{$('#item_headingheading').val().replace(/\\n/g, '<br />');}</div></div> ]]>
+    </param>
+    <param name="style" type="style" previewmode="heading" set="1000" font="item_headingfont" label="Style" css="width: 140px;">
+      <![CDATA[ <div style="width:{nextend.activeLayer.prop('style').width};"><div class="{styleClassName} {fontClassName}">{$('#item_headingheading').val().replace(/\\n/g, '<br />');}</div></div> ]]>
+    </param>
+    <param name="link" type="mixed" label="Link" default="#|*|_self">
+      <param type="url" label="Link" style="width:140px;"/>
+      <param type="list" label="Target" translateable="1">
+        <option value="_self">Self</option>
+        <option value="_blank">Blank</option>
+      </param>
+    </param>
+    <param type="group" label="Sizing">
+      <param name="fullwidth" type="onoff" label="Full width" default="1"/>
+      <param name="nowrap" type="onoff" label="No wrap" default="1"/></param>
+  </params>
+</root>

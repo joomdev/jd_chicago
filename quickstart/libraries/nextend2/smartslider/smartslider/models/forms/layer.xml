@@ -1,0 +1,61 @@
+<root>
+  <params name="layer-item-animation-tabs" classes="n2-sidebar-tab-switcher n2-tab-bordered n2-sidebar-tab-bg" type="tabbedsidebar" active="1" underlined="1">
+    <params name="item" type="grouppedsidebar" label="Item">
+      <params name="itemproperties" type="raw" label="Item properties" hidetitle="1">
+        <param name="items" type="items" label="" default=""/>
+      </params>
+    </params>
+    <params name="position" type="grouppedsidebar" label="Layer">
+      <params name="layerproperties" label="Layer properties" hidetitle="1">
+        <param name="crop" type="radio" label="Crop" default="visible">
+          <option value="visible">Off</option>
+          <option value="hidden">On</option>
+          <option value="auto">Scroll</option>
+          <option value="mask">Mask</option>
+        </param>
+        <param name="inneralign" type="radio" label="Inner align" default="left">
+          <option value="left">Left</option>
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+        </param>
+        <param class="n2-expert" type="group" label="Font">
+          <param name="font-size" type="numberautocomplete" label="#Size modifier" default="100" style="width:32px" values="60,80,100,120,140,160,180">
+            <unit value="%">%</unit>
+          </param>
+          <param name="adaptive-font" type="onoff" label="Adaptive sizing" default="0"/></param>
+        <param class="n2-expert" type="group" label="#Align">
+          <param type="halign" name="align" label="Horizontal" default="left"/>
+          <param type="valign" name="valign" label="Vertical" default="top"/></param>
+        <param type="group" label="Position">
+          <param name="left" type="text" label="#X" default="" style="width:32px;">
+            <unit value="px">px</unit>
+          </param>
+          <param name="top" type="text" label="#Y" default="" style="width:32px;">
+            <unit value="px">px</unit>
+          </param>
+          <param name="responsive-position" type="onoff" label="Responsive" default="1"/></param>
+        <param type="group" label="Size">
+          <param name="width" type="text" label="#Width" default="" style="width:32px;">
+            <unit value="px">px</unit>
+          </param>
+          <param name="height" type="text" label="#Height" default="" style="width:32px;">
+            <unit value="px">px</unit>
+          </param>
+          <param name="responsive-size" type="onoff" label="Responsive" default="1"/></param>
+        <param type="text" name="id" label="ID" default="" class="n2-hidden"/>
+        <param type="group" label="Relative point" class="n2-expert">
+          <param type="layerpicker" name="parentid" label="Layer" default=""/>
+          <param type="halign" name="parentalign" label="#Horizontal" default="left"/>
+          <param type="valign" name="parentvalign" label="#Vertical" default="top"/></param>
+        <param type="group" label="Show on">
+          <param name="show-desktop-portrait" type="onoff" label="Desktop portrait" default="1"/>
+          <param name="show-desktop-landscape" type="onoff" label="Desktop landscape" default="1"/>
+          <param name="show-tablet-portrait" type="onoff" label="Tablet portrait" default="1"/>
+          <param name="show-tablet-landscape" type="onoff" label="Tablet landscape" default="1"/>
+          <param name="show-mobile-portrait" type="onoff" label="Mobile portrait" default="1"/>
+          <param name="show-mobile-landscape" type="onoff" label="Mobile landscape" default="1"/></param>
+        <param name="resettodesktop" type="button" label="Reset position" default="Reset"/>
+      </params>
+    </params>
+  </params>
+</root>

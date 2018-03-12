@@ -1,0 +1,9 @@
+<access component="com_smartslider3">
+    <section name="component">
+        <action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC"/>
+        <action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC"/>
+        <action name="smartslider_config" title="Smart Slider - Config" description=""/>
+        <action name="smartslider_edit" title="Smart Slider - Edit" description=""/>
+        <action name="smartslider_delete" title="Smart Slider - Delete" description=""/>
+    </section>
+</access>

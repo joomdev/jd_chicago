@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_keenitportfolio</name>
+    <creationDate>2015-03-09</creationDate>
+    <copyright>Copyright (C) 2015. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Abdur Rashid</author>
+    <authorEmail>rashid.cse.05@gmail.com</authorEmail>
+    <authorUrl>http://www.keenitsolution.com</authorUrl>
+    <version>2.0.0</version>
+    <description>For displaying Portfolio of your company. Developed By Keen IT Solution Bangladesh</description>
+    
+    
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>keenitportfolio.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+    <languages folder="languages/site">
+        
+			<language tag="en-GB">en-GB/en-GB.com_keenitportfolio.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_keenitportfolio/assets/images/s_com_keenitportfolio.png" >COM_KEENITPORTFOLIO</menu>
+        <submenu>
+            
+			<menu link="option=com_keenitportfolio&amp;view=portfolios" view="portfolios" img="components/com_keenitportfolio/assets/images/s_portfolios.png" alt="Keenitportfolio/Portfolios">COM_KEENITPORTFOLIO_TITLE_PORTFOLIOS</menu>
+
+			<menu link="option=com_categories&amp;extension=com_keenitportfolio" view="categories" img="components/com_keenitportfolio/assets/images/s_portfolios.png" alt="Keenitportfolio/Categories">COM_KEENITPORTFOLIO_PORTFOLIOS_CATEGORY</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>keenitportfolio.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="languages/administrator">
+            
+			<language tag="en-GB">en-GB/en-GB.com_keenitportfolio.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_keenitportfolio.sys.ini</language>
+        </languages>
+    </administration>
+    <plugins>
+        <plugin group="search" plugin="keenitportfolio"/>
+    </plugins>
+    
+</extension>
+

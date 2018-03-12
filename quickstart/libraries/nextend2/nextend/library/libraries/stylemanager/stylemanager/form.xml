@@ -1,0 +1,79 @@
+<root>
+    <params name="firstrow" type="horizontal">
+        <param name="backgroundcolor" label="Background color" type="color" alpha="1" default="000000FF"/>
+
+        <param name="padding" label="Padding" type="mixed" default="0|*|0|*|0|*|0|*|px" translateable="0">
+            <param type="text" style="width: 22px;"/>
+            <param type="text" style="width: 22px;"/>
+            <param type="text" style="width: 22px;"/>
+            <param type="text" style="width: 22px;"/>
+            <param type="switcher">
+                <unit value="px">px</unit>
+                <unit value="%">%</unit>
+            </param>
+        </param>
+
+        <param name="boxshadow" label="Box shadow" type="mixed" default="0|*|0|*|0|*|0|*|000000ff" translateable="0">
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="color" alpha="1"/>
+        </param>
+
+    </params>
+    <params name="secondrow" type="horizontal">
+
+        <param name="border" label="Border" type="mixed" default="0|*|0|*|0|*|0|*|solid|*|000000ff"
+               translateable="0">
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="list" translateable="1">
+                <option value="none">None</option>
+                <option value="dotted">Dotted</option>
+                <option value="dashed">Dashed</option>
+                <option value="solid">Solid</option>
+                <option value="double">Double</option>
+                <option value="groove">Groove</option>
+                <option value="ridge">Ridge</option>
+                <option value="inset">Inset</option>
+                <option value="outset">Outset</option>
+            </param>
+            <param type="color" alpha="1"/>
+        </param>
+
+        <param name="borderradius" label="Border radius" type="mixed" default="0|*|0|*|0|*|0" translateable="0">
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+            <param type="text" style="width: 22px;">
+                <unit value="px">px</unit>
+            </param>
+        </param>
+
+    </params>
+</root>

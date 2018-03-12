@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="module" client="site" method="upgrade">
+	<name>ChronoForms5</name>
+	<author>ChronoEngine.com</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>Copyright (C) 2006 - 2013 ChronoEngine.com. All rights reserved.</copyright>
+	<license>GPLv2</license>
+	<authorEmail>webmaster@chronoengine.com</authorEmail>
+	<authorUrl>www.chronoengine.com</authorUrl>
+	<version>V5 RC1.2</version>
+	<description>Show a Chronoform V5</description>
+	<files>
+		<filename module="mod_chronoforms5">mod_chronoforms5.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+					<option value="0">Never</option>
+				</field>
+				<field name="chronoform" type="text" default="" label="Form Name" description="Add form name to be shown" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

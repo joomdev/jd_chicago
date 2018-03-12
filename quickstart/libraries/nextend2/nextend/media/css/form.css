@@ -1,0 +1,1219 @@
+
+.n2-form {
+    margin-bottom: 20px;
+    border-top: 1px solid transparent;
+    margin-top: -1px;
+}
+
+.n2-form-dark .n2-content-box-title-bg {
+    background-color: #4d5d70;
+}
+
+.n2-form-tab {
+    background: #ffffff;
+    margin: 20px 20px 0 20px;
+    border: 1px solid #ccd1d6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.n2-form-dark .n2-form-tab {
+    background: #4d5d70;
+    margin: 0;
+    border: 0;
+}
+
+.n2-form-tab > .n2-description {
+    margin: 20px;
+}
+
+.n2-form-dark .n2-form-tab > table {
+    border-bottom: 1px solid #414e5e;
+}
+
+.n2-form-tab > .n2-h2,
+.n2-form-tab .n2-heading-controls {
+    position: relative;
+    padding: 0 20px;
+    color: #6b7989;
+    line-height: 54px;
+    border-bottom: 1px solid #ccd1d6;
+    z-index: 2;
+}
+
+/*
+.n2-form-dark .n2-form-tab .n2-h3 {
+    padding: 0 20px;
+    line-height: 50px;
+    color: #ebeced;
+    border-bottom: 1px solid #34404c;
+    z-index: 2;
+}
+*/
+.n2-form-tab .n2-heading-controls {
+    min-height: 54px;
+}
+
+.n2-form-tab table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: -1px;
+}
+
+.n2-form-tab-horizontal {
+    padding: 20px 20px 0;
+}
+
+.n2-hidden,
+.n2-form .n2-hidden {
+    display: none !important;
+}
+
+.n2-label-col {
+    width: 251px;
+}
+
+.n2-form-dark .n2-label-col {
+    width: 136px;
+}
+
+.n2-label {
+    width: 210px;
+    background-color: #f9fafb;
+    border: 1px solid #dee1e5;
+    border-width: 1px 1px 0 0;
+    padding: 14px 20px;
+    line-height: 20px;
+
+    color: #7b8898;
+    font-size: 12px;
+}
+
+.n2-label label {
+    color: #7b8898;
+}
+
+html[dir="rtl"] .n2-label {
+    border-width: 1px 0 0 1px;
+}
+
+.n2-form-dark .n2-label {
+    width: 102px;
+    background-color: #49586a;
+    border-color: #414e5e;
+    color: #b2bfc9;
+}
+
+.n2-form-dark .n2-label label {
+    color: #b2bfc9;
+}
+
+.n2-label label {
+    display: inline-block;
+    margin: 0;
+    font-size: 100%;
+}
+
+.n2-documentation,
+.n2-documentation:HOVER,
+.n2-documentation:FOCUS,
+.n2-documentation:ACTIVE {
+    display: inline-block;
+    color: #b9c3c9;
+}
+
+.n2-i-info {
+    vertical-align: middle;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 5px;
+}
+
+.n2-form-dark .n2-i-info {
+    color: RGBA(150, 167, 180, 0.8);
+}
+
+.n2-element {
+    border-top: 1px solid #dee1e5;
+    padding: 10px 10px 0 10px;
+}
+
+.n2-form-dark .n2-element {
+    border-top: 1px solid #414e5e;
+}
+
+.n2-element > div {
+    position: relative;
+}
+
+.n2-element .n2-element-plain {
+    margin-bottom: 10px;
+    color: #6b7989;
+    font-size: 12px;
+}
+
+.n2 select, .n2 textarea, .n2 input {
+    padding: 0;
+    width: auto;
+    box-shadow: none;
+    transition: none;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.n2-form input[disabled], .n2-form select[disabled], .n2-form textarea[disabled], .n2-form input[readonly], .n2-form select[readonly], .n2-form textarea[readonly] {
+    background: transparent;
+}
+
+.n2-form textarea, .n2-form input {
+    box-sizing: border-box;
+}
+
+.n2-form-element-button,
+.n2-form-element-button:link,
+.n2-form-element-button:active,
+.n2-form-element-button:hover,
+.n2-form-element-button:visited {
+    vertical-align: top;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    background-color: #5cba3c;
+    color: #fff;
+    padding: 0 11px;
+    margin: -2px -2px -2px 0;
+
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+html[dir="rtl"] .n2-form-element-button,
+html[dir="rtl"] .n2-form-element-button:link,
+html[dir="rtl"] .n2-form-element-button:active,
+html[dir="rtl"] .n2-form-element-button:hover,
+html[dir="rtl"] .n2-form-element-button:visited {
+    margin: -2px 0 -2px -2px;
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.n2-form-element-button-inverted,
+.n2-form-element-button-inverted:link,
+.n2-form-element-button-inverted:active,
+.n2-form-element-button-inverted:hover,
+.n2-form-element-button-inverted:visited {
+    margin: -2px 0 -2px -2px;
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+html[dir="rtl"] .n2-form-element-button-inverted,
+html[dir="rtl"] .n2-form-element-button-inverted:link,
+html[dir="rtl"] .n2-form-element-button-inverted:active,
+html[dir="rtl"] .n2-form-element-button-inverted:hover,
+html[dir="rtl"] .n2-form-element-button-inverted:visited {
+    margin: -2px -2px -2px 0;
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.n2-form-element-clear,
+.n2-form-element-clear:link,
+.n2-form-element-clear:active,
+.n2-form-element-clear:hover,
+.n2-form-element-clear:visited {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    width: 28px;
+    vertical-align: top;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*
+NextendText
+*/
+.n2-form-element-text {
+    display: inline-block;
+    border: 2px solid #a1aeb5;
+    margin: 0 10px;
+    background: #ffffff;
+    white-space: nowrap;
+    vertical-align: top;
+    height: 24px;
+}
+
+.n2-form-dark .n2-form-element-text {
+    border-color: #343f4c;
+    background: #3c4958;
+}
+
+.n2-form .n2-form-element-text {
+    margin-bottom: 10px;
+}
+
+.n2-form-element-text.focus {
+    border-color: #1999e3;
+}
+
+.n2-form-element-text input,
+.n2-form-element-text input[type],
+.n2-form-element-text input:focus,
+.n2-form-element-text input[type]:focus,
+.n2-form-element-option-chooser input[type] {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    height: 24px;
+    line-height: 24px;
+    color: #7b8898;
+    vertical-align: top;
+}
+
+.n2-form-dark .n2-form-element-text input,
+.n2-form-dark .n2-form-element-text input:focus {
+    background: #3c4958;
+    color: #b2bfc9;
+}
+
+.n2-form-element-number input {
+    text-align: center;
+}
+
+.n2-form-element-autocomplete.n2-form-element-number .ui-autocomplete .ui-menu-item {
+    text-align: center;
+}
+
+.n2-form-element-text .n2-text-sub-label,
+.n2-form-element-text .n2-text-unit {
+    display: inline-block;
+    padding: 0 5px;
+    background-color: #a1aeb5;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: top;
+    color: #fff;
+}
+
+html[dir="rtl"] .n2-form-element-text .n2-text-sub-label,
+.n2-form-element-text .n2-text-unit {
+    margin-right: -2px;
+    margin-left: 0;
+}
+
+.n2-form-element-text .n2-text-sub-label,
+html[dir="rtl"] .n2-form-element-text .n2-text-unit {
+    margin-right: 0;
+    margin-left: -2px;
+}
+
+.n2-form-dark .n2-form-element-text .n2-text-sub-label,
+.n2-form-dark .n2-form-element-text .n2-text-unit {
+    background: #343f4c;
+}
+
+.n2-form-element-text.focus .n2-text-sub-label,
+.n2-form-element-text.focus .n2-text-unit {
+    background-color: #1999e3;
+}
+
+.n2-form-element-text .n2-form-element-preview {
+    display: inline-block;
+    margin: 1px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    vertical-align: top;
+}
+
+.n2-form-element-file input[type="file"] {
+    padding: 0;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.n2-form-element-preview-fixed {
+    position: relative;
+    height: 96px;
+    border: 2px solid #3c4958;
+    background-position: 50% 50%;
+    background-size: cover;
+    margin: 0 10px 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.n2-form-element-preview-fixed .n2-button {
+    display: none;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.n2-form-element-preview-fixed:HOVER .n2-button {
+    display: block;
+}
+
+.n2-form-element-autocomplete .ui-autocomplete {
+    position: absolute;
+    min-width: 100% !important;
+    background: #fff;
+    border: 2px solid #1999e3;
+    color: #7b8898;
+    font-size: 12px;
+    margin: 5px 0;
+    border-radius: 0;
+    box-shadow: none;
+    list-style-type: none;
+    z-index: 1000;
+}
+
+.n2-form-element-autocomplete .ui-autocomplete .ui-menu-item {
+    line-height: 26px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.n2-form-element-autocomplete .ui-autocomplete .ui-menu-item.ui-state-focus {
+    background: #e9edf0;
+    border: 0;
+    margin: 0;
+    color: #7b8898;
+    font-weight: normal;
+}
+
+.n2-form-element-autocomplete.ui-front{
+    z-index: auto;
+}
+
+/*
+NextendTextarea
+*/
+
+.n2-form-element-textarea {
+    display: inline-block;
+    border: 2px solid #a1aeb5;
+    margin: 0 10px;
+}
+
+.n2-form .n2-form-element-textarea {
+    margin-bottom: 10px;
+}
+
+.n2-form-dark .n2-form-element-textarea {
+    border-color: #343f4c;
+    background-color: #3c4958;
+}
+
+.n2-form-element-textarea.focus {
+    border-color: #1999e3;
+}
+
+.n2-form-element-textarea textarea,
+.n2-form-element-textarea textarea:focus {
+    margin: 0;
+    padding: 2px 6px;
+    border: 0;
+    display: inline-block;
+    color: #7b8898;
+    vertical-align: top;
+    min-height: 24px;
+}
+
+.n2-form-dark .n2-form-element-textarea textarea,
+.n2-form-dark .n2-form-element-textarea textarea:focus {
+    background: #3c4958;
+    color: #b2bfc9;
+}
+
+.n2-textarea-rich {
+    background: #4d5d70;
+    border-bottom: 2px solid #343f4c;
+    height: 32px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.n2-textarea-rich > div {
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    border-right: 2px solid #343f4c;
+    cursor: pointer;
+}
+
+/**
+Option choosers -> font, style
+**/
+.n2-form-element-option-chooser {
+    display: inline-block;
+    border: 2px solid #a1aeb5;
+    margin: 0 10px;
+    background: #ffffff;
+}
+
+.n2-form .n2-form-element-option-chooser {
+    margin-bottom: 10px;
+}
+
+.n2-form-dark .n2-form-element-option-chooser {
+    border-color: #343f4c;
+    background: #3c4958;
+}
+
+.n2-form-element-option-chooser input {
+    display: inline-block;
+    margin: 0 5px;
+    border: 0;
+    box-shadow: none;
+    height: 24px;
+    line-height: 24px;
+    color: #7b8898;
+}
+
+.n2-form-dark .n2-form-element-option-chooser input {
+    background: #3c4958;
+    color: #b2bfc9;
+}
+
+/*
+NextendColor
+*/
+
+.n2-form-element-color input {
+    text-transform: uppercase;
+    width: 50px;
+    text-align: center;
+}
+
+.n2-form-element-color-alpha input {
+    width: 70px;
+}
+
+/*
+NextendMixed
+*/
+
+.n2-form-element-mixed {
+    display: inline-block;
+}
+
+.n2-form-element-mixed .n2-mixed-group {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.n2-form-element-mixed .n2-mixed-label {
+    line-height: 14px;
+    /*min-height: 14px;*/
+}
+
+.n2-form-element-mixed label {
+    margin: 0 10px;
+    color: #7b8898;
+    font-size: 10px;
+    display: inline-block;
+}
+
+.n2-form-dark .n2-form-element-mixed label {
+    color: #b2bfc9;
+}
+
+.n2-mixed-element > div {
+    position: relative;
+}
+
+/*
+NextendOnOff
+*/
+.n2-form-element-onoff,
+.n2-form-element-onoff * {
+    display: inline-block;
+}
+
+.n2-form-element-onoff {
+    position: relative;
+    background: #9aa8af;
+    width: 44px;
+    height: 24px;
+    margin: 2px 10px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.n2-form .n2-form-element-onoff {
+    margin-bottom: 13px;
+}
+
+.n2-form-element-onoff.n2-onoff-on {
+    background: #63b33f;
+}
+
+.n2-form-element-onoff .n2-onoff-slider {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 88px;
+    height: 18px;
+    -webkit-transition: left 0.25s;
+    transition: left 0.25s;
+}
+
+.n2-form-element-onoff .n2-onoff-slider * {
+    vertical-align: top;
+}
+
+.n2-form-element-onoff.n2-onoff-on .n2-onoff-slider {
+    left: -18px;
+}
+
+html[dir="rtl"] .n2-form-element-onoff .n2-onoff-slider {
+    left: -44px;
+}
+
+html[dir="rtl"] .n2-form-element-onoff.n2-onoff-on .n2-onoff-slider {
+    left: -26px;
+}
+
+.n2-form-element-onoff .n2-onoff-no,
+.n2-form-element-onoff .n2-onoff-yes {
+    width: 14px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.n2-form-element-onoff .n2-onoff-slider .n2-i {
+    line-height: inherit;
+}
+
+.n2-form-element-onoff .n2-onoff-no {
+    margin: 0 4px 0 4px;
+}
+
+.n2-form-element-onoff .n2-onoff-yes {
+    font-size: 14px;
+    margin: 0 3px 0 3px;
+}
+
+.n2-form-element-onoff .n2-onoff-round {
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    box-shadow: 0 0 0 1px RGBA(0, 0, 0, 0.1);
+}
+
+.n2-form-element-onoff-button {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #909ca3;
+    line-height: 28px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.n2-form-element-onoff-button .n2-onoffb-label {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 0 10px;
+    line-height: 28px;
+}
+
+.n2-form-element-onoff-button .n2-onoffb-container {
+    background-color: #a1aeb5;
+    width: 32px;
+    height: 28px;
+    display: inline-block;
+}
+
+.n2-form-element-onoff-button * {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.n2-form-element-onoff-button .n2-onoffb-slider {
+    position: relative;
+    border-radius: 4px;
+    background-color: #6b7986;
+    width: 20px;
+    height: 8px;
+    margin: 10px 6px;
+}
+
+.n2-form-element-onoff-button.n2-onoff-on .n2-onoffb-slider {
+    background-color: #40b618;
+}
+
+.n2-form-element-onoff-button .n2-onoffb-round {
+    position: absolute;
+    left: 10px;
+    top: -1px;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    -webkit-transition: left 0.25s;
+    transition: left 0.25s;
+}
+
+.n2-form-element-onoff-button.n2-onoff-on .n2-onoffb-round {
+    left: 0px;
+}
+
+/*
+NextendSwitcher
+*/
+
+.n2-form-element-switcher,
+.n2-form-element-switcher * {
+    display: inline-block
+}
+
+.n2-form-element-switcher {
+    margin: 0 10px;
+}
+
+.n2-form .n2-form-element-switcher {
+    margin-bottom: 10px;
+}
+
+.n2-form-element-switcher .n2-switcher-unit {
+    background-color: #a1aeb5;
+    line-height: 28px;
+    color: #ffffff;
+    padding: 0 8px;
+    cursor: pointer;
+    border-right: 1px solid #b9c3c9;
+}
+
+.n2-form-element-switcher .n2-switcher-unit.n2-active {
+    background-color: #1999e3;
+    cursor: default;
+}
+
+.n2-form-element-switcher .n2-switcher-unit.n2-first {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.n2-form-element-switcher .n2-switcher-unit.n2-last {
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-right: 0;
+}
+
+/*
+NextendRadio
+*/
+
+.n2-form-element-radio {
+}
+
+.n2-form .n2-form-element-radio {
+    margin-bottom: 10px;
+}
+
+.n2-form-element-radio,
+.n2-form-element-radio * {
+    display: inline-block;
+
+}
+
+.n2-form-element-radio .n2-radio-option {
+    color: #7b8898;
+    margin: 5px 10px;
+    cursor: pointer;
+    line-height: 18px;
+    vertical-align: top;
+}
+
+.n2-form-dark .n2-form-element-radio .n2-radio-option {
+    color: #b2bfc9;
+}
+
+.n2-form-element-radio .n2-radio-option.n2-active {
+    cursor: default;
+}
+
+.n2-form-element-radio .n2-radio-option-marker {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #bcc6cb;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    margin-right: 5px;
+    -webkit-transition: border-color 0.25s, background-color 0.25s;
+    transition: border-color 0.25s, background-color 0.25s;
+    background-color: #ffffff;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    vertical-align: top;
+    text-align: center;
+}
+
+html[dir="rtl"] .n2-form-element-radio .n2-radio-option-marker {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.n2-form-dark .n2-form-element-radio .n2-radio-option-marker {
+    border-color: #343f4c;
+    background-color: #4d5d70;
+}
+
+.n2-form-element-radio .n2-radio-option-marker .n2-i {
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    opacity: 0;
+}
+
+.n2-form-element-radio .n2-radio-option.n2-active .n2-radio-option-marker {
+    border-color: #6fbc49;
+    background-color: #6fbc49;
+}
+
+.n2-form-element-radio .n2-radio-option.n2-active .n2-radio-option-marker .n2-i {
+    opacity: 1;
+}
+
+.n2-form-element-radio .n2-radio-option.n2-active .n2-radio-option-marker + span {
+    vertical-align: top;
+}
+
+/*
+.n2-form-element-radio .n2-radio-option span {
+    line-height: 18px;
+}
+*/
+
+.n2-imagelist .n2-form-element-radio {
+    max-width: 100%;
+}
+
+.n2-imagelist .n2-radio-option {
+    border: 4px solid #b8c2cd;
+    padding: 4px;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.n2-imagelist .n2-imagelist-option {
+    line-height: 0;
+    background: #b8c2cd;
+    max-width: 94%;
+}
+
+.n2-white .n2-imagelist .n2-imagelist-option {
+    background: #fff;
+}
+
+.n2-imagelist .n2-radio-option.n2-active {
+    border-color: #1999e3;
+}
+
+.n2-imagelist img {
+    max-width: 100%;
+}
+
+/*
+NextendRadioTab
+*/
+
+.n2-form-element-radio-tab {
+    margin: 0 10px;
+    line-height: 28px;
+    vertical-align: middle !important;
+    height: 28px;
+    display: inline-block;
+}
+
+.n2-form .n2-form-element-radio-tab {
+    margin-bottom: 10px;
+}
+
+.n2-form-element-radio-tab > div {
+    float: left;
+
+}
+
+.n2-form-element-radio-tab .n2-radio-option-label,
+.n2-form-element-radio-tab .n2-radio-option {
+    padding: 0 10px;
+    text-align: center;
+    background: #8e9ea7;
+    cursor: pointer;
+    color: #fff;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+
+.n2-form-element-radio-tab .n2-radio-option-label {
+    background: #909ca3;
+    cursor: default;
+}
+
+.n2-form-dark .n2-form-element-radio-tab .n2-radio-option {
+    background: #6b7986;
+}
+
+.n2-form-element-radio-tab .n2-radio-option.n2-active {
+    background: #1999e3;
+}
+
+.n2-form-element-radio-tab .n2-radio-option-label.n2-first,
+.n2-form-element-radio-tab .n2-radio-option.n2-first {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.n2-form-element-radio-tab .n2-radio-option-label.n2-last,
+.n2-form-element-radio-tab .n2-radio-option.n2-last {
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/*
+NextendList
+*/
+.n2-form-element-list {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.n2-form .n2-form-element-list {
+    margin-bottom: 10px;
+}
+
+.n2-form-element-list select {
+    padding: 0;
+    margin: 0;
+    height: 24px;
+    border: 2px solid #b9c3c9;
+    background: transparent;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.n2-form-element-list select[multiple] {
+    height: auto;
+}
+
+.n2-form-dark .n2-form-element-list select {
+    border: 2px solid #343f4c;
+    background: #3c4958;
+    color: #b2bfc9;
+}
+
+.n2-form-element-list select:focus {
+    box-shadow: none;
+}
+
+.n2-form-element-list select {
+    font-weight: normal;
+    font-size: 12px;
+    color: #7b8898;
+}
+
+.n2-form-element-list select option {
+    padding: 0 5px;
+}
+
+/**
+NextendButton
+**/
+.n2-form-element-single-button {
+    margin: 0 10px;
+}
+
+.n2-form .n2-form-element-single-button {
+    margin-bottom: 10px;
+}
+
+/**
+NextendCheckbox
+**/
+
+.n2-form-element-checkbox {
+    display: inline-block;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.n2-form .n2-form-element-checkbox {
+    margin-bottom: 10px;
+}
+
+.n2-checkbox-option {
+    display: inline-block;
+    margin: 0 3px;
+    background: #8e9ea7;
+    cursor: pointer;
+    line-height: 28px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.n2-checkbox-option.n2-active {
+    background: #1999e3;
+}
+
+.n2-checkbox-option.n2-first {
+    margin-left: 0;
+}
+
+.n2-checkbox-option.n2-last {
+    margin-right: 0;
+}
+
+.n2-form-element-decoration {
+    display: inline-block;
+}
+
+.n2-form-element-icon-radio .n2-radio-option,
+.n2-form-element-decoration .n2-checkbox-option,
+.n2-form-element-textalign .n2-radio-option {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 0;
+}
+
+.n2-form-element-img + a,
+.n2-form-element-img + a + a {
+    margin-right: 10px;
+}
+
+.n2-form-element-icon {
+    display: inline-block;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.n2-form .n2-form-element-icon {
+    margin-bottom: 10px;
+}
+
+/*
+.n2-form-element-icon img {
+    height: 28px;
+    vertical-align: top;
+}
+*/
+
+.n2-form-element-icon .n2-form-element-preview {
+    margin-right: 3px;
+    border: 0;
+    width: 22px;
+    height: 22px;
+}
+
+.n2-icons-modal .n2-modal-content {
+    overflow: auto !important;
+}
+
+.n2-icons-modal .n2-icon {
+    display: inline-block;
+    margin: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.n2-icons-modal .n2-modal-content {
+    overflow: auto;
+}
+
+.n2-icons-modal .n2-modal-content .n2-form-tab:last-child {
+    margin-bottom: 40px;
+}
+
+.n2-subform-image {
+}
+
+.n2-subform-image .n2-subform-image-option {
+    display: inline-block;
+    width: 150px;
+    height: 120px;
+    padding: 30px 3%;
+}
+
+.n2-subform-image .n2-subform-image-option .n2-subform-image-element {
+    width: 150px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.n2-subform-image .n2-subform-image-option.n2-active .n2-subform-image-element {
+    background-position: 0 -100px;
+    cursor: default;
+}
+
+.n2-subform-image .n2-subform-image-option .n2-subform-image-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.n2-subform-image .n2-subform-image-option {
+    color: #7b8898;
+}
+
+.n2-subform-image .n2-subform-image-option.n2-active {
+    color: #1999e3;
+}
+
+.n2-subform-image.n2-small .n2-subform-image-option .n2-subform-image-element {
+    width: 100px;
+    height: 70px;
+}
+
+.n2-subform-image.n2-small .n2-subform-image-option.n2-active .n2-subform-image-element {
+    background-position: 0 -80px;
+}
+
+.n2-subform-image.n2-small .n2-subform-image-option {
+    width: 100px;
+    height: 100px;
+}
+
+.n2-subform-image .n2-subform-image-option-simple {
+    display: inline-block;
+    width: 190px;
+    height: 120px;
+    border-radius: 3px;
+    border: 5px solid #a1aeb5;
+    margin: 25px;
+    padding: 0;
+    vertical-align: top;
+}
+
+.n2-subform-image .n2-subform-image-option-simple.n2-active {
+    border-color: #1999e3;
+}
+
+.n2-subform-image .n2-subform-image-option-simple div.n2-subform-image-element {
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-y;
+}
+
+.n2-subform-image .n2-subform-image-option-simple.n2-active div.n2-subform-image-element {
+    background-position: 0 -120px;
+}
+
+.n2-subform-2-rows {
+    max-height: 360px;
+    overflow: auto;
+    margin: -10px -10px 0
+}
+
+.n2-form-matrix {
+    /*border-color: #343f4c;*/
+    border-bottom-width: 1px;
+    border-radius: 3px;
+}
+
+.n2-form-matrix .n2-form-tab {
+    border-radius: 0;
+}
+
+.n2-form-matrix > .n2-h2 {
+    padding: 0;
+}
+
+.n2-form-matrix .n2-form-matrix-menu {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+    line-height: 60px;
+    font-size: 14px;
+    color: #b2bfc9;
+}
+
+.n2-form-matrix .n2-form-matrix-menu.n2-active {
+    color: #fff;
+}
+
+.n2-form-matrix .n2-form-matrix-menu.n2-has-underline > .n2-underline::after {
+    bottom: -10px;
+    color: #1999e3;
+}
+
+.n2-form-matrix-pane {
+    display: none;
+}
+
+.n2-form-matrix > .n2-form-matrix-views {
+    z-index: 4;
+    padding: 0 20px;
+    background: #343f4c;
+    margin: -1px -1px 0 -1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.n2-form-matrix-pane.n2-active {
+    display: block;
+}
+
+.n2-form-matrix-pane .n2-form {
+    margin-bottom: 0;
+}
+
+.n2-form-matrix-pane .n2-form-tab {
+    border-width: 0 0 1px;
+    margin: 0;
+}
+
+.n2-form-matrix-pane .n2-form-tab > .n2-h2 {
+    font-size: 14px;
+}

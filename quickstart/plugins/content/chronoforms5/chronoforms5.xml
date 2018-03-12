@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" version="1.6.0" group="content" method="upgrade">
+	<name>Chronoforms5</name>
+	<author>ChronoEngine.com</author>
+	<creationDate>08.Dec.2013</creationDate>
+	<copyright>(C) ChronoEngine.com</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>webmaster@chronoengine.com</authorEmail>
+	<authorUrl>www.chronoengine.com</authorUrl>
+	<version>V5.0</version>
+	<license>GPLv2</license>
+	<description><![CDATA[
+	This plugin requires the ChronoForms V5 component.
+	You just need to put the name of the form you want to show between : {chronoforms5}&{/chronoforms5}, Example: {chronoforms5}my_form_name{/chronoforms5}
+	]]></description>
+	<files>
+		<filename plugin="chronoforms5">chronoforms5.php</filename>
+	</files>
+</extension>

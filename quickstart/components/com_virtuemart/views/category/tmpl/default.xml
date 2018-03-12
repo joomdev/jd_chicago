@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIRTUEMART_CATEGORY_VIEW_DEFAULT_TITLE">
+		<message><![CDATA[COM_VIRTUEMART_CATEGORY_VIEW_DEFAULT_DESC]]></message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_virtuemart/fields">
+			<field name="virtuemart_category_id" type="vmcategory"
+				label="COM_VIRTUEMART_CATEGORY_FIELD_SELECT_TITLE" required="true"
+				extension="com_virtuemart"
+				description="COM_VIRTUEMART_CATEGORY_FIELD_SELECT_TITLE_DESC" />
+            <field name="virtuemart_manufacturer_id" type="manufacturer"
+                   default="0"
+                   label="COM_VIRTUEMART_MANUFACTURER_FIELD_SELECT_TITLE"
+                   required="false"
+                   description="COM_VIRTUEMART_MANUFACTURER_FIELD_SELECT_TITLE_DESC" />
+			<field name="categorylayout" type="vmlayout"
+				label="COM_VIRTUEMART_CATEGORY_FIELD_SELECT_LAYOUT" required="true"
+				extension="com_virtuemart"
+				description="COM_VIRTUEMART_CATEGORY_FIELD_SELECT_LAYOUT_DESC" />
+            <field name="showcategory" type="radio" default="1"
+                   label="COM_VIRTUEMART_CATEGORY_FIELD_SELECT_SHOWCAT"
+                   extension="com_virtuemart"
+                   description="COM_VIRTUEMART_CATEGORY_FIELD_SELECT_SHOWCAT_DESC" >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="showproducts" type="radio" default="1"
+                   label="COM_VIRTUEMART_CATEGORY_FIELD_SELECT_SHOWPROD"
+                   extension="com_virtuemart"
+                   description="COM_VIRTUEMART_CATEGORY_FIELD_SELECT_SHOWPROD_DESC" >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="productsublayout" type="vmproductsublayout"
+                   label="COM_VIRTUEMART_CFG_PRODUCTS_SUBLAYOUT" required="true"
+                   extension="com_virtuemart"
+                   description="COM_VIRTUEMART_CFG_PRODUCTS_SUBLAYOUT_TIP" />
+		</fieldset>
+	</fields>
+</metadata>
+

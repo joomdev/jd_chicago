@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>Keen IT Responsive Portfolio</name>
+	<author>Abdur Rashid</author>
+	<creationDate>09 March 2015</creationDate>
+	<copyright>Copyright (C) 2013 - 2015 Keen IT Solution. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>rashid.cse.05@gmail.com</authorEmail>
+	<authorUrl>www.keenitsolution.com</authorUrl>
+	<version>2.0.0</version>
+	<description>Keen IT Responsive Portfolio Module developed By Keen IT Solution Team</description>
+	<files>
+		<filename module="mod_keenitportfolio">mod_keenitportfolio.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		
+		<filename>mod_keenitportfolio.xml</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_keenitportfolio.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+            	<field 
+					name="count"
+					type="text"
+					default="20"
+					label="MOD_KEENITPORTFOLIO_DISPLAY_NUMBER_OF_ITEM"
+					description="MOD_KEENITPORTFOLIO_DISPLAY_NUMBER_OF_ITEM_DESC" />
+				<field
+					name="title"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_KEENITPORTFOLIO_DISPLAY_TITLE"
+					description="MOD_KEENITPORTFOLIO_DISPLAY_TITLE_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field
+					name="lightbox_icon"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_KEENITPORTFOLIO_DISPLAY_ZOOM_ICON"
+					description="MOD_KEENITPORTFOLIO_DISPLAY_ZOOM_ICON_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field
+					name="details_icon"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_KEENITPORTFOLIO_DISPLAY_DETAILS_ICON"
+					description="MOD_KEENITPORTFOLIO_DISPLAY_DETAILS_ICON_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field
+					name="showmore_btn"
+					type="text"
+					default=""
+					hint="http://"
+					label="MOD_KEENITPORTFOLIO_DISPLAY_SHOWMORE_BTN"
+					description="MOD_KEENITPORTFOLIO_DISPLAY_SHOWMORE_BTN_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+					
+					
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+					value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

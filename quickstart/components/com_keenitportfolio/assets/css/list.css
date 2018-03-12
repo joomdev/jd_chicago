@@ -1,0 +1,258 @@
+/**
+ * @version     2.0.0
+ * @package     com_keenitportfolio
+ * @copyright   Copyright (C) 2015. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Abdur Rashid <rashid.cse.05@gmail.com> - http://www.keenitsolution.com
+ */
+
+table.front-end-list{
+    width: 100%;
+    border-spacing: 1px;
+    background-color: #f3f3f3;
+    color: #666;
+}
+
+table.front-end-list thead th{
+    text-align: center;
+    background: #f7f7f7;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #fff;
+}
+
+table.front-end-list td, table.front-end-list th{
+    padding: 4px;
+}
+
+table.front-end-list thead th.align-left{
+    text-align: left;
+}
+
+table.front-end-list thead th.align-center, table.front-end-list tbody td.align-center {
+    text-align: center;
+}
+
+table.front-end-list tbody tr td{
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+table.front-end-list td{
+    padding-left: 8px;
+}
+
+div.list-footer{
+    clear:both;
+    text-decoration: none;
+    text-align: center;
+}
+
+div.list-footer ul{
+    list-style: none;
+    display: inline-block;
+}
+
+div.list-footer ul li{
+    display: inline-block;
+}
+
+div.list-footer div.limit{
+    display: inline-block;
+}
+
+div.list-footer div.counter{
+    display: inline-block;
+}
+
+div.filter-select.hide{
+    display: none;
+}
+
+div.filter-select.show{
+    display: block;
+}
+
+div.filter-search , div.filter-select {
+    float: left;
+    clear: both;
+}
+
+div.filter-select .fltlft{
+    float: left;
+    clear: both;
+}
+
+div.field-filter{
+    float: left;
+    margin: 10px;
+}
+
+#filter-bar div.fltrt div.button2-left .blank a {
+    margin-top: 0 !important;
+}
+
+button.open{
+    font-weight: bold;
+}
+
+div.field-filter:first-of-type{
+    margin-left: 0;
+}
+/*===============================
+=         Portfolio area        =
+===============================*/
+.align-center {
+  text-align: center;
+}
+#filters .btn {
+  margin-right: 10px;
+}
+#filters .btn:last-child {
+  margin-right: 0;
+}
+@media (max-width: 560px) {
+  #filters .btn {
+    margin-bottom: 10px;
+  }
+}
+.portfolio-area {
+  width:100%;
+}
+.portfolio-item {
+  width: 25%;
+  float: left;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .portfolio-item {
+    width: 33.33%;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-item {
+    width: 50%;
+  }
+}
+@media (max-width: 420px) {
+  .portfolio-item {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+}
+#portfolio-filter {
+  margin: 40px 0;
+}
+.portfolio_detail {
+  margin: 20px 0;
+  overflow:hidden
+}
+.portfolio_detail label{
+	font-weight:bold;
+	display:inline-block;
+	margin-right:5px;
+	}
+.p-box {
+  position: relative;
+  overflow: hidden;
+}
+.p-box .port-img {
+  width: 100%;
+  height: auto;
+}
+.p-box .hover-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: rgba(50, 50, 50, 0.5);
+  color: #ffffff;
+  line-height: 36px;
+  overflow: hidden;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.p-box .hover-wrapper .outter {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.p-box .hover-wrapper .inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.p-box .hover-wrapper h5 {
+  margin: 0;
+  opacity: 0;
+}
+.p-box .hover-wrapper i.fa {
+  color: #37C0A9 !important;
+  font-size: 20px !important;
+  opacity: 0;
+}
+.p-box .hover-wrapper i.fa:hover {
+  color: #fff !important;
+}
+.p-box:hover .hover-wrapper {
+  left: 0;
+  width: 100%;
+}
+.p-box:hover h5 {
+  opacity: 1;
+}
+.p-box:hover i.fa {
+  opacity: 1;
+}
+.p-box:hover h5,
+.p-box:hover i.fa {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#filters .btn-port {
+  background: #fff !important;
+  border: 1px solid #37C0A9 !important;
+  color: #37C0A9 !important;
+  font-size: 15px;
+  padding: 5px 13px;
+  margin-right:10px;
+  border-radius:5px;
+  transition:all 0.5s ease-in-out 0s;
+}
+#filters  .btn-port.current, #filters  .btn-port:hover, #filters  .btn-port:focus{
+	background:#37C0A9 !important;
+	color:#fff !important;
+	
+	}
+/*************Portfolio Detail********************************/
+.port-width40{
+	float:left;
+	width:40%;
+}
+.port-width40 img{
+	max-width:100%;
+	}
+.port-width60{
+	float:left;
+	width:55%;
+	padding:0 2% 0 3%;
+}
+
+@media (max-width:767px){
+	.port-width40{
+		width:100%;
+		}
+	.port-width60{
+			float:left;
+			width:100%;
+			padding:15px 0;
+		}
+	}
+/*-----  End of Portfolio area ------*/

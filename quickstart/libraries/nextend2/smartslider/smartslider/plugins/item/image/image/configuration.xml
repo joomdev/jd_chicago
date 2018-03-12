@@ -1,0 +1,12 @@
+<root>
+  <params name="image-item" label="Image item settings" hidetitle="1">
+    <param name="image" type="image" label="Image" default="" fixed="1" style="width: 144px;"/>
+    <param name="link" type="mixed" label="Link" default="#|*|_self">
+      <param type="url" label="Link" style="width:140px;"/>
+      <param type="list" label="Target" translateable="1">
+        <option value="_self">Self</option>
+        <option value="_blank">Blank</option>
+      </param>
+    </param>
+  </params>
+</root>

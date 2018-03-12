@@ -1,0 +1,39 @@
+<root>
+  <params name="slide" label="Slide settings">
+    <param name="title" type="text" label="Name" default="Slide 1" style="width: 400px;"/>
+    <param name="description" type="textarea" label="Description" default="" style="display: block;" style2="width:100%; resize: vertical; height: 50px;"/>
+    <param type="group" name="Properties" class="n2-expert">
+      <param name="published" type="onoff" label="Published" default="1"/>
+      <param name="first" type="onoff" label="First" default="0" class="n2-hidden"/>
+      <param type="onoff" name="static-slide" label="Static slide" default="0" class="n2-expert"/></param>
+    <param name="publishdates" type="mixed" label="Published between" class="n2-expert" default="0000-00-00 00:00:00|*|0000-00-00 00:00:00">
+      <param type="date" label="Publish up"/>
+      <param type="date" label="Publish down"/></param>
+    <param name="thumbnail" type="image" label="Thumbnail url" default=""/>
+    <param type="group" label="Background">
+      <param name="backgroundColor" type="color" alpha="1" label="Color" default="ffffff00"/>
+      <param name="backgroundImage" type="imagemanager" label="Image" default=""/>
+      <param name="backgroundImageOpacity" label="Opacity" type="numberautocomplete" default="100" style="width: 22px;" min="0" max="100" values="100,80,60,40,20,0">
+        <unit value="%">%</unit>
+      </param>
+      <param name="backgroundMode" type="list" label="Fill mode" default="fill" translateable="1">
+        <option value="fill">Fill</option>
+        <option value="fit">Fit</option>
+        <option value="stretch">Stretch</option>
+        <option value="center">Center</option>
+        <option value="tile">Tile</option>
+      </param>
+    </param>
+    <param type="mixed" name="link" label="Link" default="|*|_self">
+      <param type="url" label="Link"/>
+      <param type="list" label="Target" translateable="1">
+        <option value="_self">Self</option>
+        <option value="_blank">Blank</option>
+      </param>
+    </param>
+    <param name="slide-duration" type="text" label="Slide duration" style="width:40px;" default="0">
+      <unit value="ms">ms</unit>
+    </param>
+    <param name="slide" type="hidden" label="Slide" default="W10=" class="n2-hidden"/>
+  </params>
+</root>

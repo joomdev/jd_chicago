@@ -1,0 +1,130 @@
+(~'div#@{sliderid}') {
+  .nextend-thumbnail-default,
+  .nextend-thumbnail-inner {
+    overflow: hidden;
+  }
+
+  .n2-ss-thumb-image {
+    background-size: cover;
+    display: inline-block;
+  }
+
+  .nextend-thumbnail-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nextend-thumbnail-button {
+    position: absolute;
+    z-index: 2;
+    transition: all 0.4s;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .nextend-thumbnail-vertical .nextend-thumbnail-button {
+    left: 50%;
+    margin-left: -13px !important;
+  }
+
+  .nextend-thumbnail-vertical .nextend-thumbnail-previous {
+    top: -26px;
+  }
+
+  .nextend-thumbnail-vertical .nextend-thumbnail-previous.n2-active {
+    top: 10px;
+    opacity: 1;
+  }
+
+  .nextend-thumbnail-vertical .nextend-thumbnail-next {
+    bottom: -26px;
+  }
+
+  .nextend-thumbnail-vertical .nextend-thumbnail-next.n2-active {
+    bottom: 10px;
+    opacity: 1;
+  }
+
+  .nextend-thumbnail-horizontal .nextend-thumbnail-button {
+    top: 50%;
+    margin-top: -13px !important;
+    transform: rotateZ(-90deg);
+  }
+
+  .nextend-thumbnail-horizontal .nextend-thumbnail-previous {
+    left: -26px;
+  }
+
+  .nextend-thumbnail-horizontal .nextend-thumbnail-previous.n2-active {
+    left: 10px;
+    opacity: 1;
+  }
+
+  .nextend-thumbnail-horizontal .nextend-thumbnail-next {
+    right: -26px;
+  }
+
+  .nextend-thumbnail-horizontal .nextend-thumbnail-next.n2-active {
+    right: 10px;
+    opacity: 1;
+  }
+
+  .nextend-thumbnail-default .nextend-thumbnail-scroller {
+    position: relative;
+    float: left;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    white-space: nowrap;
+  }
+
+  .nextend-thumbnail-default .nextend-thumbnail-scroller td > div {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    background-size: cover;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    cursor: pointer;
+  }
+
+  .nextend-thumbnail-default .nextend-thumbnail-scroller td > div.n2-active {
+    cursor: default;
+  }
+
+  .nextend-thumbnail-default table,
+  .nextend-thumbnail-default td {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .nextend-thumbnail-default .n2-ss-caption {
+    display: inline-block;
+    white-space: normal;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    overflow: hidden;
+  }
+
+  .nextend-thumbnail-default .n2-caption-overlay {
+    position: absolute;
+  }
+
+  .nextend-thumbnail-default .n2-caption-overlay div {
+    float: left;
+    clear: left;
+  }
+
+  .nextend-thumbnail-horizontal .n2-ss-caption {
+    display: block;
+  }
+
+  .nextend-thumbnail-vertical .n2-caption-after,
+  .nextend-thumbnail-vertical .n2-caption-before {
+    height: 100%;
+  }
+}

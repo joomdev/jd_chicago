@@ -1,0 +1,81 @@
+<root>
+  <params name="slider-settings" type="tabbed" active="1" underlined="1">
+    <params name="general" type="groupped" label="General">
+      <params name="slider" label="Slider settings" hidetitle="1">
+        <param name="title" type="text" label="Name" default="Slider" style="width:400px;"/>
+        <param label="Controls" type="group">
+          <param name="controlsScroll" type="onoff" label="Mouse scroll" default="0"/>
+          <param name="controlsDrag" type="onoff" label="Mouse drag" default="1"/>
+          <param name="controlsTouch" type="radio" label="Touch" default="horizontal">
+            <option value="0">Disabled</option>
+            <option value="horizontal">Horizontal</option>
+            <option value="vertical">Vertical</option>
+          </param>
+          <param name="controlsKeyboard" type="onoff" label="Keyboard" default="1"/></param>
+        <param name="align" type="radio" label="Align" default="normal">
+          <option value="normal">Normal</option>
+          <option value="left">Left</option>
+          <option value="center">Center</option>
+          <option value="right">Right</option>
+        </param>
+      </params>
+      <params name="slidertype" label="Slider Type" class="n2-expert">
+        <param name="type" type="slidertype" ajaxurl="slider/renderform" label="Type" default="simple" file="slider.xml"/>
+      </params>
+      <params name="slidertypeplaceholder" label="Slider Type placeholder" id="nextend-type-panel" type="placeholder"></params>
+    </params>
+    <params name="size" type="groupped" label="Size">
+      <params name="slider-responsive" label="Responsive" hidetitle="1">
+        <param type="group" label="Slider size">
+          <param name="width" type="numberautocomplete" label="Width" default="900" style="width:35px" values="1920,1400,1000,800,600,400">
+            <unit>px</unit>
+          </param>
+          <param name="height" type="numberautocomplete" label="Height" default="500" style="width:35px" values="800,600,500,400,300,200">
+            <unit>px</unit>
+          </param>
+        </param>
+        <param type="number" name="fontsize" label="Font size" default="16" style="width:20px" class="n2-hidden">
+          <unit>px</unit>
+        </param>
+        <param name="margin" label="Margin" type="mixed" default="0|*|0|*|0|*|0" translateable="0">
+          <param type="text" style="width: 22px;" label="Top">
+            <unit value="px">px</unit>
+          </param>
+          <param type="text" style="width: 22px;" label="Right">
+            <unit value="px">px</unit>
+          </param>
+          <param type="text" style="width: 22px;" label="Bottom">
+            <unit value="px">px</unit>
+          </param>
+          <param type="text" style="width: 22px;" label="Left">
+            <unit value="px">px</unit>
+          </param>
+        </param>
+      </params>
+      <params name="slider-responsive1" label="Responsive mode">
+        <param name="responsive-mode" type="sliderresponsive" ajaxurl="slider/renderform" default="auto" file="responsive.xml"/>
+      </params>
+      <params name="slider-responsive-placeholder" id="nextend-responsive-mode-panel" type="placeholder"/></params>
+    <params name="autoplay" type="groupped" label="Autoplay">
+      <params name="autoplay" label="Autoplay settings" hidetitle="1">
+        <param type="group" label="Autoplay">
+          <param name="autoplay" type="onoff" label="Enabled" default="0"/>
+          <param name="autoplayDuration" type="number" label="Interval" default="8000" style="width:35px;">
+            <unit>ms</unit>
+          </param>
+        </param>
+        <param type="group" label="Stop autoplay on">
+          <param name="autoplayStopClick" type="onoff" label="Click" default="1"/>
+          <param name="autoplayStopMouse" type="list" label="Mouse" default="0" translateable="1">
+            <option value="0">Off</option>
+            <option value="enter">Enter</option>
+            <option value="leave">Leave</option>
+          </param>
+          <param name="autoplayStopMedia" type="onoff" label="Media started" default="1"/></param>
+      </params>
+    </params>
+  </params>
+  <params name="widgets" label="Widgets" type="raw" hidetitle="1">
+    <param name="widgets" type="pluginmatrix" label="" group="sswidget" method="onWidgetList" default="arrow"/>
+  </params>
+</root>
