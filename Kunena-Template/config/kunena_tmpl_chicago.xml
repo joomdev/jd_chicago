@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension>
+<extension version="2.5" type="file">
+	<name>JD Chicago</name>
+	<version>1.1</version>
+	<creationDate>August 2016</creationDate>
+	<author>Joomdev</author>
+	<authorEmail>info@joomdev.com</authorEmail>
+	<authorUrl>https://www.joomdev.com</authorUrl>
+	<copyright>(C) 2008 - 2015 JoomDev. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<description></description>
+	<files>
+		<filename>config.xml</filename>
+		<filename>README.md</filename>
+		<filename>template.php</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>layouts</folder>
+		<folder>less</folder>
+		<folder>media</folder>
+		<folder>pages</folder>
+	</files>
+</extension>
